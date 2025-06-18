@@ -1,8 +1,8 @@
-const Header = () => {
-
+const Header = (props) => {
+console.log("props: ",props)
     return (
         <header>
-            <h1>Groceries List</h1>
+            <h1>Hello {props.title}</h1>
         </header>
     )
 }
